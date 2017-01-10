@@ -22,8 +22,8 @@ Stage 4: Add the two mantissas. Then, determine the amount of shifts required an
 
 Stage 5: Shift the mantissa to the required direction by the required amount. Adjust the exponent
   		 accordingly and check for any exceptional condition (normalization-2)
-pipeline_add.v
 
+pipeline_add.v
 32 - bit pipelined Floating point adder 
 This design is pipeline so instead of whole design instrcutions are divided into parts and whole execution complete in five cycles.
 It takes the data in IEEE 754 format and convert it to decimal first and afterwards it add or subtract the two number according to 

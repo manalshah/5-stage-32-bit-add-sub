@@ -2,6 +2,7 @@
 Single Precision(32-bit) five stage Floating Point Adder and Subtractor
 -->
 Unpipeline_add.v
+
 32 - bit Unpipelined Floating point adder 
 This design is unpipeline so whole design takes complete hardware to compute one whole instrcution.
 It takes the data in IEEE 754 format and convert it to decimal first and afterwards it add or subtract the two number according to 
@@ -24,6 +25,7 @@ Stage 5: Shift the mantissa to the required direction by the required amount. Ad
   		 accordingly and check for any exceptional condition (normalization-2)
 
 pipeline_add.v
+
 32 - bit pipelined Floating point adder 
 This design is pipeline so instead of whole design instrcutions are divided into parts and whole execution complete in five cycles.
 It takes the data in IEEE 754 format and convert it to decimal first and afterwards it add or subtract the two number according to 
@@ -34,5 +36,6 @@ it passes the resulant data to the next stage and afterwards new instuction is f
 This kind of strcuture is known as pipelined design. With increment in hardware, it also increase the processing speed. 
 
 -->Conclusion:
+
 Usage of pipeline will increase the speed of computation. 
 For unpipelined it took 60 sec to give output. But for pipelined it only took 35 sec to produce output for same test bech.
